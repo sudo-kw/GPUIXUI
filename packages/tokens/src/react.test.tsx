@@ -1,3 +1,4 @@
+import { readFileSync } from "node:fs";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import { ThemeProvider, useTheme, useThemePresence } from "./react.js";
@@ -69,5 +70,16 @@ describe("theme presence", () => {
       </ThemeProvider>,
     );
     expect(html).toContain(`provided:${darkTheme.mode}`);
+  });
+});
+
+describe("the React entry's JSX runtime", () => {
+  it("pins React, so a consumer's jsxImportSource cannot capture the file", () => {
+    const source = readFileSync(
+      new URL("./react.tsx", import.meta.url),
+      "utf8",
+    );
+
+    expect(source.startsWith("/** @jsxImportSource react */")).toBe(true);
   });
 });

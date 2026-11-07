@@ -11,7 +11,11 @@ const text = (comment) => comment.value.replace(/^\s*\*+\s?/gm, "").trim();
 
 const kept = (comment) => {
   const value = text(comment);
-  return KEEP_WORDS.test(value) || KEEP_PREFIX.test(value);
+  return (
+    comment.type === "Shebang" ||
+    KEEP_WORDS.test(value) ||
+    KEEP_PREFIX.test(value)
+  );
 };
 
 const words = (comment) => text(comment).split(/\s+/).filter(Boolean).length;

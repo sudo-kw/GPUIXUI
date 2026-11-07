@@ -254,6 +254,7 @@ Order: `721` → `722` → (`723`, `724` → `725`) → `728` → `730`, `729` �
 | [755](./755-tasks-block.md) | The tasks block: a Notion-style Tasks view for the docs | F | blocks registry, `@gpuixui/components`, tokens | **done** — top bar, workspace rail, dated inbox and two card rows; ticks, New Task, pin and collapse are live |
 | [758](./758-shadcn-first-platform-themes.md) | shadcn-first platform themes, and a shadcn `default` | F | `@gpuixui/tokens`, the docs token catalogue | **landed** — platforms authored as shadcn variables plus extras with every value frozen by a test; the site's `default` is shadcn's neutral theme, audited as warnings |
 | [756](./756-block-component-parity.md) | Blocks paint with the library's own drawings | F | blocks registry, the charts package, the docs frame | **done** — one animated tab strip, one rail toggle, the dashboard's charts on the package's geometry, the page-wide column, GitHub source links and the prose cut |
+| [761](./761-comment-budget-audit.md) | What the comment budget removed besides comments, and the fixer's shebang bug | tooling | 757 | done |
 | [757](./757-comment-budget.md) | A hard comment budget | F | root oxlint config, `scripts/` | **done** — `comments/no-long-comments` (2 lines / 24 words / 3 lines per file), 95 868 → 756 comment lines (99.2%) |
 
 ### Media

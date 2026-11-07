@@ -97,6 +97,14 @@ describe("the GPUix web build", () => {
     expect(bytes).toBeGreaterThan(1024 * 1024);
   });
 
+  it("keeps the hashed assets, including the wasm, immutable", () => {
+    const deploy = read("packages/deploy/alchemy.run.docs.ts");
+
+    expect(deploy).toContain("/assets/*");
+    expect(deploy).toContain("public, max-age=31536000, immutable");
+    expect(deploy).toContain("headers: docsAssetHeaders");
+  });
+
   it("publishes the browser target in the capability record", () => {
     const prose = record.replace(/\s+/g, " ");
 
