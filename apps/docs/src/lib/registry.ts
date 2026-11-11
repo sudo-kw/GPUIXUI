@@ -124,8 +124,8 @@ export const dependenciesOf = (
 };
 
 export const registryAuthor = {
-  name: "Cyberistic",
-  url: "https://github.com/Cyberistic",
+  name: "sudo-kw",
+  url: "https://github.com/sudo-kw",
 } as const;
 
 export const itemJson = (

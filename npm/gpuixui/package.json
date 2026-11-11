@@ -7,7 +7,7 @@
   "homepage": "https://gpuixui.sudokw.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Cyberistic/GPUIXUI.git"
+    "url": "git+https://github.com/sudo-kw/GPUIXUI.git"
   },
   "keywords": [
     "gpui",

@@ -10,7 +10,7 @@ describe("the edit link", () => {
     );
 
     expect(markup).toContain(
-      'href="https://github.com/Cyberistic/GPUIXUI/edit/master/packages/components/docs/dialog.mdx"',
+      'href="https://github.com/sudo-kw/GPUIXUI/edit/master/packages/components/docs/dialog.mdx"',
     );
     expect(markup).toContain(">Edit this page on GitHub</a>");
     expect(markup).toContain(
@@ -26,7 +26,7 @@ describe("the edit link", () => {
     );
 
     expect(markup).toContain(
-      'href="https://github.com/Cyberistic/GPUIXUI/edit/master/apps/docs/content/docs/components/dialog.mdx"',
+      'href="https://github.com/sudo-kw/GPUIXUI/edit/master/apps/docs/content/docs/components/dialog.mdx"',
     );
     expect(markup).not.toContain("packages/components/docs");
   });

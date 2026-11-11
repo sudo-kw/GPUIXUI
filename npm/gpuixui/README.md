@@ -7,7 +7,7 @@ icons, all themed by semantic roles.
 **This version reserves the name. The library is not published yet.**
 
 - Documentation, every component and every preview: <https://gpuixui.sudokw.com>
-- Source: <https://github.com/Cyberistic/GPUIXUI>
+- Source: <https://github.com/sudo-kw/GPUIXUI>
 - Build prompt for an agent: <https://gpuixui.sudokw.com/getting-started/prompt>
 
 GPUIxUI is a from-scratch library built on top of the GPUix runtime. It is not

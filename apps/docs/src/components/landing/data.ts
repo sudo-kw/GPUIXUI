@@ -53,7 +53,7 @@ export const omarchyCards: ReadonlyArray<OmarchyCard> = [
   },
 ];
 
-export const repo = "https://github.com/Cyberistic/GPUIXUI";
+export const repo = "https://github.com/sudo-kw/GPUIXUI";
 
 const countWords = [
   "Zero",

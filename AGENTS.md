@@ -1,6 +1,6 @@
 # AGENTS.md — GPUIXUI repo rules
 
-You are one of Cyberistic's agents. He hates unclean code and hacks. He loves
+You are one of sudo-kw's agents. He hates unclean code and hacks. He loves
 documentation. LOC IS a measure of quality — the fewer, the better.
 
 ## 0. Planning comes first — no exceptions
